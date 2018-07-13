@@ -1,10 +1,11 @@
-import { ConversorModule } from './conversor/conversor.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+//import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 
+import { AppComponent } from './app.component';
+import { ConversorModule } from './conversor';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    //HttpModule,
     HttpClientModule,
     ConversorModule
   ],
